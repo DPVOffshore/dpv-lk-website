@@ -26,10 +26,10 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 bg-surface shadow-nav transition-colors duration-300">
-      <div className="mx-auto flex min-h-[80px] max-w-[1400px] items-center justify-between gap-4 px-6 py-2">
+      <div className="flex min-h-[80px] w-full items-center justify-between gap-4 px-6 py-2 md:px-10 lg:px-14">
         <Link href="/" className="flex items-center gap-3">
-          <Image src="/assets/dpv_logo.png" alt="DPV Offshore" width={160} height={60} className="h-[52px] w-auto" />
-          <span className="font-poppins text-[11px] font-bold tracking-[0.15em] text-brand-purple">
+          <Image src="/assets/dpv_logo.png" alt="DPV Offshore" width={188} height={60} className="h-[52px] w-auto" />
+          <span className="font-poppins text-[11px] font-bold tracking-[0.15em] text-brand-purple dark:text-ink">
             SRI LANKA
           </span>
         </Link>
@@ -44,7 +44,7 @@ export default function Navbar() {
                 className={`whitespace-nowrap rounded-full px-4 py-2 font-inter text-[13px] font-bold tracking-[0.1em] transition-colors ${
                   active
                     ? "bg-brand-orange text-white"
-                    : "text-brand-purple hover:text-brand-orange"
+                    : "text-brand-purple hover:text-brand-orange dark:text-ink"
                 }`}
               >
                 {link.label}
@@ -106,7 +106,7 @@ export default function Navbar() {
                     className={`rounded-xl px-4 py-3 font-inter text-sm font-bold tracking-[0.1em] transition-colors ${
                       active
                         ? "bg-brand-orange text-white"
-                        : "text-brand-purple hover:bg-surface-alt hover:text-brand-orange"
+                        : "text-brand-purple hover:bg-surface-alt hover:text-brand-orange dark:text-ink"
                     }`}
                   >
                     {link.label}

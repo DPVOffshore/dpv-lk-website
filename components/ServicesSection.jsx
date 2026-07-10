@@ -32,7 +32,7 @@ export default function ServicesSection() {
                 href={`/services/${s.slug}`}
                 className="group block rounded-3xl border border-line bg-surface-card p-10 transition-all duration-300 hover:-translate-y-2 hover:border-transparent hover:shadow-card-lg"
               >
-                <div className="bg-gradient-to-b from-brand-purple via-[rgba(94,83,139,0.5)] to-[rgba(255,242,242,0.5)] bg-clip-text font-poppins text-[56px] font-extrabold leading-none text-transparent">
+                <div className="bg-gradient-to-b from-brand-purple via-[rgba(94,83,139,0.5)] to-[rgba(255,242,242,0.5)] bg-clip-text font-poppins text-[56px] font-extrabold leading-none text-transparent dark:from-ink dark:via-[rgba(163,170,191,0.6)] dark:to-[rgba(24,27,33,0.4)]">
                   {s.num}
                 </div>
                 <h3 className="mt-6 font-poppins text-[28px] font-bold leading-tight text-ink">
@@ -43,7 +43,7 @@ export default function ServicesSection() {
                   {s.highlights.map((hl) => (
                     <li
                       key={hl}
-                      className="flex items-center gap-2.5 text-sm font-medium text-brand-purple"
+                      className="flex items-center gap-2.5 text-sm font-medium text-brand-purple dark:text-ink"
                     >
                       <span className="h-1.5 w-1.5 flex-none rounded-full bg-brand-orange" />
                       {hl}

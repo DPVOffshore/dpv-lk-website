@@ -65,7 +65,7 @@ export default function AboutStats() {
             everything we do, backed by our regional network across the UAE,
             Singapore and the Indian Ocean.
           </p>
-          <blockquote className="mt-7 border-l-[3px] border-brand-orange pl-5 font-poppins text-[17px] font-semibold leading-normal text-brand-purple">
+          <blockquote className="mt-7 border-l-[3px] border-brand-orange pl-5 font-poppins text-[17px] font-semibold leading-normal text-brand-purple dark:text-ink">
             &ldquo;Anchored in Sri Lanka. Connected to the world.&rdquo;
           </blockquote>
         </Reveal>
@@ -73,7 +73,7 @@ export default function AboutStats() {
           <Stagger className="grid grid-cols-2 gap-6">
             {STATS.map((st) => (
               <StaggerItem key={st.label} className="rounded-3xl bg-surface-alt px-8 py-9">
-                <div className="font-poppins text-[52px] font-extrabold leading-none text-brand-purple">
+                <div className="font-poppins text-[52px] font-extrabold leading-none text-brand-purple dark:text-ink">
                   {Math.round(st.target * p)}
                   <span className="text-brand-orange">{st.suffix}</span>
                 </div>

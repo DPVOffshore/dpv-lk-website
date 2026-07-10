@@ -97,7 +97,7 @@ export default function ServicePage({ params }) {
             <Stagger className="mt-14 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-5">
               {STEPS.map((sp) => (
                 <StaggerItem key={sp.num}>
-                  <div className="bg-gradient-to-b from-brand-purple via-[rgba(94,83,139,0.5)] to-[rgba(255,242,242,0.5)] bg-clip-text font-poppins text-[64px] font-extrabold leading-none text-transparent">
+                  <div className="bg-gradient-to-b from-brand-purple via-[rgba(94,83,139,0.5)] to-[rgba(255,242,242,0.5)] bg-clip-text font-poppins text-[64px] font-extrabold leading-none text-transparent dark:from-ink dark:via-[rgba(163,170,191,0.6)] dark:to-[rgba(20,23,28,0.4)]">
                     {sp.num}
                   </div>
                   <h4 className="mt-4 font-poppins text-lg font-bold text-ink">{sp.title}</h4>
