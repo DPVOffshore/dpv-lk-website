@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --surface: 255 255 255;
+  --surface-alt: 248 250 252;
+  --surface-card: 255 255 255;
+  --ink: 26 26 26;
+  --ink-secondary: 74 74 104;
+  --line: 229 231 235;
+}
+
+.dark {
+  --surface: 15 17 21;
+  --surface-alt: 20 23 28;
+  --surface-card: 24 27 33;
+  --ink: 237 239 244;
+  --ink-secondary: 163 170 191;
+  --line: 39 42 51;
+}
+
+::selection {
+  background: #ec4a0a;
+  color: #fff;
+}
+
+a {
+  color: #ec4a0a;
+}
+a:hover {
+  color: #d44309;
+}
