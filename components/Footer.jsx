@@ -8,10 +8,12 @@ export default function Footer() {
       <div className="mx-auto max-w-[1400px]">
         <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 xl:grid-cols-4">
           <div>
-            <Image src="/assets/footer-logo.svg" alt="DPV Offshore" width={160} height={56} className="h-14 w-auto" />
-            <h3 className="mt-6 font-poppins text-[22px] font-bold tracking-[-0.01em] text-brand-orange-alt">
-              DPV Offshore &amp; Marine Services (Pvt) Ltd
-            </h3>
+            <div className="flex items-center gap-3">
+              <Image src="/assets/dpv_icon.png" alt="DPV Offshore" width={41} height={64} className="h-14 w-auto" />
+              <h3 className="font-poppins text-[19px] font-bold leading-tight tracking-[-0.01em] text-brand-orange-alt">
+                DPV Offshore &amp; Marine Services (Pvt) Ltd
+              </h3>
+            </div>
             <p className="mt-4 text-sm leading-[1.8] text-gray-300">
               Shipping, ship management and ship charters for the Indian
               Ocean&apos;s busiest crossroads.
