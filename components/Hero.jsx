@@ -1,5 +1,5 @@
 import HeroMap from "./HeroMap";
-import HeroRigMobile from "./HeroRigMobile";
+import HeroMobile from "./HeroMobile";
 
 export default function Hero() {
   return (
@@ -7,10 +7,7 @@ export default function Hero() {
       <div className="hidden lg:block">
         <HeroMap />
       </div>
-      <div aria-hidden="true" className="pointer-events-none absolute inset-x-0 top-0 aspect-[340/300] overflow-hidden lg:hidden">
-        <HeroRigMobile className="absolute inset-0 h-full w-full" />
-        <div className="absolute inset-x-0 bottom-0 h-12 bg-gradient-to-b from-transparent to-surface" />
-      </div>
+      <HeroMobile />
       <div className="pointer-events-none relative mr-auto w-full max-w-[960px] px-6 pb-24 pt-[88%] sm:px-10 md:px-14 lg:px-16 lg:pt-24">
         <p className="mb-7 font-poppins text-sm font-bold tracking-[0.15em] text-brand-orange-light">
           DPV OFFSHORE &amp; MARINE SERVICES — SRI LANKA
