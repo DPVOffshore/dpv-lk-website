@@ -32,6 +32,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: "if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }",
+          }}
+        />
+      </head>
       <body
         className={`${poppins.variable} ${inter.variable} ${dmSans.variable} ${orbitron.variable} font-inter bg-surface text-ink antialiased`}
       >
