@@ -63,14 +63,8 @@ export default function HeroRigMobile({ className = "" }) {
             <circle cx="255" cy="90" r="2.3" className="fill-ink/80" />
           </g>
 
-          {/* flare stack + beacon */}
+          {/* flare stack */}
           <rect x="251.5" y="36" width="7" height="20" className="fill-ink/80" />
-          <circle
-            cx="264"
-            cy="58"
-            r="2.6"
-            className="fill-brand-orange animate-[rig-beacon_1.6s_ease-in-out_infinite] motion-reduce:animate-none"
-          />
 
           {/* flame — plump, curvy tongues like the logo */}
           <g className="[transform-box:fill-box] [transform-origin:center_bottom] animate-[rig-flame_1.1s_ease-in-out_infinite] motion-reduce:animate-none">

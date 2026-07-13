@@ -45,10 +45,6 @@ a:hover {
   0%, 100% { opacity: 0.35; }
   50% { opacity: 0.85; }
 }
-@keyframes rig-beacon {
-  0%, 100% { opacity: 0.15; }
-  50% { opacity: 1; }
-}
 @keyframes rig-flame {
   0%, 100% { transform: scaleY(1) scaleX(1); opacity: 1; }
   28% { transform: scaleY(1.2) scaleX(0.88); opacity: 0.85; }
@@ -70,13 +66,4 @@ a:hover {
 @keyframes rig-wave {
   from { transform: translateX(0); }
   to { transform: translateX(-44px); }
-}
-@keyframes rig-boat {
-  from { transform: translateX(-64px); }
-  to { transform: translateX(404px); }
-}
-@keyframes rig-bubble {
-  0% { transform: translateY(0); opacity: 0; }
-  25% { opacity: 0.6; }
-  100% { transform: translateY(-42px); opacity: 0; }
 }
