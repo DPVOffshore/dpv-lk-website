@@ -12,7 +12,7 @@ export default function HeroMobile() {
       className="pointer-events-none absolute inset-x-0 top-0 aspect-[340/300] overflow-hidden lg:hidden"
     >
       <HeroRigMobile className="absolute inset-0 h-full w-full" />
-      <div className="absolute inset-x-0 bottom-0 h-12 bg-gradient-to-b from-transparent to-surface" />
+      <div className="absolute inset-x-0 bottom-0 h-5 bg-gradient-to-b from-transparent to-surface" />
     </div>
   );
 }
