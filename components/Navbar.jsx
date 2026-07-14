@@ -37,10 +37,13 @@ export default function Navbar() {
         <nav className="hidden items-center gap-1 lg:flex">
           {NAV_LINKS.map((link) => {
             const active = pathname === link.href;
+            const external = link.href.startsWith("http");
             return (
               <Link
                 key={link.href}
                 href={link.href}
+                target={external ? "_blank" : undefined}
+                rel={external ? "noopener noreferrer" : undefined}
                 className={`whitespace-nowrap rounded-full px-4 py-2 font-inter text-[13px] font-bold tracking-[0.1em] transition-colors ${
                   active
                     ? "bg-brand-orange text-white"
@@ -99,10 +102,13 @@ export default function Navbar() {
             <div className="flex flex-col gap-1 px-6 py-4">
               {NAV_LINKS.map((link) => {
                 const active = pathname === link.href;
+                const external = link.href.startsWith("http");
                 return (
                   <Link
                     key={link.href}
                     href={link.href}
+                    target={external ? "_blank" : undefined}
+                    rel={external ? "noopener noreferrer" : undefined}
                     className={`rounded-xl px-4 py-3 font-inter text-sm font-bold tracking-[0.1em] transition-colors ${
                       active
                         ? "bg-brand-orange text-white"

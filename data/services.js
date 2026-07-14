@@ -83,7 +83,34 @@ export const STEPS = [
 
 export const NAV_LINKS = [
   { label: "HOME", href: "/" },
-  { label: "SHIPPING", href: "/services/shipping" },
-  { label: "SHIP MANAGEMENT", href: "/services/ship-management" },
-  { label: "SHIP CHARTERS", href: "/services/ship-charters" },
+  { label: "ABOUT US", href: "https://dpvoffshore.com/about" },
+  { label: "INDUSTRIES", href: "https://dpvoffshore.com/industries" },
+  { label: "PRODUCTS", href: "https://dpvoffshore.com/products" },
+  { label: "SERVICES", href: "https://dpvoffshore.com/services" },
+];
+
+// The main dpvoffshore.com site is where the group's current, active
+// business actually lives — the Sri Lanka services below (SERVICES) are
+// what this office plans to offer locally, not yet the core business.
+export const MAIN_SITE_LINKS = [
+  {
+    label: "About Us",
+    href: "https://dpvoffshore.com/about",
+    desc: "Maritime services spanning electrical, mechanical, yacht refitting and offshore engineering — across the Middle East and beyond.",
+  },
+  {
+    label: "Industries",
+    href: "https://dpvoffshore.com/industries",
+    desc: "World-class engineering, procurement and construction solutions across the global maritime and energy sectors.",
+  },
+  {
+    label: "Products",
+    href: "https://dpvoffshore.com/products",
+    desc: "Sustainable electric vessels and customized maritime engineering solutions built for specialized operations.",
+  },
+  {
+    label: "Services",
+    href: "https://dpvoffshore.com/services",
+    desc: "Comprehensive marine, electrical, mechanical and heavy industrial solutions — ship repair, automation and equipment overhauls.",
+  },
 ];

@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import PortsTicker from "@/components/PortsTicker";
+import MainSiteSection from "@/components/MainSiteSection";
 import ServicesSection from "@/components/ServicesSection";
 import AboutStats from "@/components/AboutStats";
 import WhyChooseUs from "@/components/WhyChooseUs";
@@ -15,10 +16,11 @@ export default function HomePage() {
       <main>
         <Hero />
         <PortsTicker />
-        <ServicesSection />
+        <MainSiteSection />
         <AboutStats />
         <WhyChooseUs />
         <ClientLogos />
+        <ServicesSection />
         <CallToAction />
       </main>
       <Footer />

@@ -29,16 +29,21 @@ export default function Footer() {
               Quick Links
             </h4>
             <ul className="mt-5 flex flex-col gap-3">
-              {NAV_LINKS.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-gray-300 transition-colors hover:text-brand-orange-alt"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
+              {NAV_LINKS.map((link) => {
+                const external = link.href.startsWith("http");
+                return (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      target={external ? "_blank" : undefined}
+                      rel={external ? "noopener noreferrer" : undefined}
+                      className="text-sm text-gray-300 transition-colors hover:text-brand-orange-alt"
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                );
+              })}
               <li>
                 <a
                   href="https://dpvoffshore.com"
