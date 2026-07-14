@@ -24,7 +24,9 @@ export default function Hero() {
         </p>
         <div className="pointer-events-auto mt-11 flex flex-wrap gap-4">
           <a
-            href="#services"
+            href="https://dpvoffshore.com/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-3 rounded-full bg-gradient-to-br from-brand-orange to-brand-orange-light px-9 py-4 font-dmsans text-xs font-bold tracking-[1.8px] text-white shadow-btn transition-transform duration-300 hover:-translate-y-1 hover:scale-[1.03]"
           >
             OUR SERVICES
