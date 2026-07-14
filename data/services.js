@@ -83,7 +83,7 @@ export const STEPS = [
 
 export const NAV_LINKS = [
   { label: "HOME", href: "/" },
-  { label: "ABOUT US", href: "https://dpvoffshore.com/about" },
+  { label: "ABOUT US", href: "#about" },
   { label: "INDUSTRIES", href: "https://dpvoffshore.com/industries" },
   { label: "PRODUCTS", href: "https://dpvoffshore.com/products" },
   { label: "SERVICES", href: "https://dpvoffshore.com/services" },
@@ -92,12 +92,9 @@ export const NAV_LINKS = [
 // The main dpvoffshore.com site is where the group's current, active
 // business actually lives — the Sri Lanka services below (SERVICES) are
 // what this office plans to offer locally, not yet the core business.
+// "About Us" isn't in this list — it's a real section on this page
+// (AboutStats.jsx, id="about"), not an external card.
 export const MAIN_SITE_LINKS = [
-  {
-    label: "About Us",
-    href: "https://dpvoffshore.com/about",
-    desc: "Maritime services spanning electrical, mechanical, yacht refitting and offshore engineering — across the Middle East and beyond.",
-  },
   {
     label: "Industries",
     href: "https://dpvoffshore.com/industries",

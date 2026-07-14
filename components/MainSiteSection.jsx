@@ -19,10 +19,14 @@ export default function MainSiteSection() {
           </Reveal>
           <Reveal as="p" className="max-w-[440px] text-base leading-[1.8] text-ink-secondary">
             Our active engineering, industrial and marine business runs on
-            dpvoffshore.com — see the full group offering there.
+            dpvoffshore.com — see the full group offering there, or{" "}
+            <a href="#about" className="font-semibold text-brand-orange hover:underline">
+              read more about us
+            </a>
+            .
           </Reveal>
         </div>
-        <Stagger className="mt-14 grid grid-cols-1 gap-7 sm:grid-cols-2 xl:grid-cols-4">
+        <Stagger className="mt-14 grid grid-cols-1 gap-7 md:grid-cols-2 xl:grid-cols-3">
           {MAIN_SITE_LINKS.map((item) => (
             <StaggerItem key={item.href}>
               <a

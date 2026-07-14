@@ -44,26 +44,31 @@ export default function AboutStats() {
   }, []);
 
   return (
-    <section className="bg-surface px-8 py-24 transition-colors duration-300">
+    <section id="about" className="bg-surface px-8 py-24 transition-colors duration-300">
       <div className="mx-auto grid max-w-[1400px] grid-cols-1 items-center gap-x-[72px] gap-y-12 lg:grid-cols-2">
         <Reveal>
           <p className="font-poppins text-sm font-bold uppercase tracking-[0.15em] text-brand-orange">
             ABOUT US
           </p>
           <h2 className="mt-3.5 font-poppins text-[clamp(32px,3.4vw,44px)] font-bold leading-tight tracking-[-0.03em] text-ink">
-            Your trusted partner in navigating tomorrow&apos;s maritime challenges.
+            A trusted marine, offshore &amp; subsea partner — recognized for
+            quality, safety and on-time delivery.
           </h2>
           <p className="mt-6 text-base leading-[1.8] text-ink-secondary">
-            DPV Offshore &amp; Marine Services (Pvt) Ltd does more than deliver
-            maritime services — we deliver trust, reliability and innovation.
-            From our base in Colombo, we serve international owners and
-            operators with the same precision and dedication that define the
-            maritime world.
+            Founded in 2018 by Duminda Gunathilake and a team of seasoned
+            marine professionals, DPV Offshore set out to raise industry
+            standards with comprehensive, dependable and high-quality
+            maritime solutions. What began locally has grown into a
+            world-class engineering group delivering reliable, end-to-end
+            marine and industrial solutions across the Middle East, South
+            Asia and beyond.
           </p>
           <p className="mt-4 text-base leading-[1.8] text-ink-secondary">
-            We value every partnership we build. Your success is at the heart of
-            everything we do, backed by our regional network across the UAE,
-            Singapore and the Indian Ocean.
+            Every project is guided by five principles: safety first in
+            every job and location, quality workmanship and attention to
+            detail, integrity and transparency in all dealings, commitment
+            to on-time delivery, and pride in our Sri Lankan roots alongside
+            a global standard of service.
           </p>
           <blockquote className="mt-7 border-l-[3px] border-brand-orange pl-5 font-poppins text-[17px] font-semibold leading-normal text-brand-purple dark:text-ink">
             &ldquo;Anchored in Sri Lanka. Connected to the world.&rdquo;
