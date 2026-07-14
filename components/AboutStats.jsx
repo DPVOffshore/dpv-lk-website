@@ -88,6 +88,14 @@ export default function AboutStats() {
               </StaggerItem>
             ))}
           </Stagger>
+          <a
+            href="https://dpvoffshore.com/about"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 inline-flex items-center gap-3 rounded-full bg-gradient-to-br from-brand-orange to-brand-orange-light px-9 py-4 font-dmsans text-xs font-bold tracking-[1.8px] text-white shadow-btn transition-transform duration-300 hover:-translate-y-1 hover:scale-[1.03]"
+          >
+            MORE ABOUT US <span aria-hidden="true">→</span>
+          </a>
         </div>
       </div>
     </section>
