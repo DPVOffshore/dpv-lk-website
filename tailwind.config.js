@@ -14,6 +14,8 @@ module.exports = {
           "orange-alt": "#FF5722",
           "orange-dark": "#D44309",
           purple: "#251A66",
+          "logo-red": "#E23B47",
+          "logo-navy": "#8AA0E6",
           dark: "#1A1A1A",
           "dark-footer": "#1C1C1C",
           "dark-hero": "#0B0D12",

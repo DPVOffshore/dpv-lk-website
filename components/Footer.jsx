@@ -10,8 +10,13 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-3">
               <Image src="/assets/dpv_icon.png" alt="DPV Offshore" width={41} height={64} className="h-14 w-auto" />
-              <h3 className="font-poppins text-[19px] font-bold leading-tight tracking-[-0.01em] text-brand-orange-alt">
-                DPV Offshore &amp; Marine Services (Pvt) Ltd
+              <h3 className="leading-tight">
+                <span className="block font-poppins text-xl font-extrabold tracking-[-0.01em] text-brand-logo-red">
+                  DPV offshore
+                </span>
+                <span className="mt-0.5 block font-poppins text-sm font-bold tracking-[-0.005em] text-brand-logo-navy">
+                  Marine Services (Pvt) Ltd
+                </span>
               </h3>
             </div>
             <p className="mt-4 text-sm leading-[1.8] text-gray-300">
