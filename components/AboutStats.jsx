@@ -1,14 +1,17 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { Award, Users, Factory, Zap, Ship, Globe } from "lucide-react";
 import Reveal from "./motion/Reveal";
 import Stagger, { StaggerItem } from "./motion/Stagger";
 
 const STATS = [
-  { target: 10, suffix: "+", label: "Years of Experience" },
-  { target: 120, suffix: "+", label: "Vessels Served" },
-  { target: 350, suffix: "+", label: "Port Calls Handled" },
-  { target: 4, suffix: "", label: "Sri Lankan Ports" },
+  { icon: Award, target: 12, suffix: "Y+", label: "Experience" },
+  { icon: Users, target: 100, suffix: "+", label: "Employees" },
+  { icon: Factory, target: 12, suffix: "+", label: "EPC" },
+  { icon: Zap, target: 7, suffix: "+", label: "Power Plants" },
+  { icon: Ship, target: 465, suffix: "+", label: "Vessels" },
+  { icon: Globe, target: 14, suffix: "+", label: "Countries" },
 ];
 
 export default function AboutStats() {
@@ -75,14 +78,15 @@ export default function AboutStats() {
           </blockquote>
         </Reveal>
         <div ref={ref}>
-          <Stagger className="grid grid-cols-2 gap-6">
+          <Stagger className="grid grid-cols-2 gap-4 sm:grid-cols-3">
             {STATS.map((st) => (
-              <StaggerItem key={st.label} className="rounded-3xl bg-surface-alt px-8 py-9">
-                <div className="font-poppins text-[52px] font-extrabold leading-none text-brand-purple dark:text-ink">
+              <StaggerItem key={st.label} className="rounded-3xl bg-surface-alt px-5 py-6">
+                <st.icon size={22} className="text-brand-orange" strokeWidth={2} />
+                <div className="mt-3 font-poppins text-[32px] font-extrabold leading-none text-brand-purple dark:text-ink">
                   {Math.round(st.target * p)}
                   <span className="text-brand-orange">{st.suffix}</span>
                 </div>
-                <div className="mt-3 font-inter text-sm font-semibold uppercase tracking-[0.05em] text-ink-secondary">
+                <div className="mt-2 font-inter text-xs font-semibold uppercase tracking-[0.05em] text-ink-secondary">
                   {st.label}
                 </div>
               </StaggerItem>
