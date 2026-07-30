@@ -48,6 +48,19 @@ export default function CallToAction() {
               Ports: Colombo · Hambantota · Galle · Trincomalee
             </p>
           </div>
+          <div className="overflow-hidden rounded-3xl bg-white/65 p-2">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.748320614942!2d79.86400757674419!3d6.920661818416993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2594a3b233105%3A0xd46e20187af8732a!2sDPV%20Offshore%20%26%20Marine%20Services%20(Pvt)%20Ltd!5e0!3m2!1sen!2slk!4v1785381002707!5m2!1sen!2slk"
+              width="100%"
+              height="220"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+              title="DPV Offshore & Marine Services location"
+              className="rounded-2xl"
+            />
+          </div>
         </div>
       </Reveal>
     </section>
