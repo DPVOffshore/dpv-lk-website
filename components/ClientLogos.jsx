@@ -2,14 +2,14 @@
 import Reveal from "./motion/Reveal";
 
 const LOGOS = [
-  "MSC_logo.png",
-  "Shell_logo.png",
-  "adnoc_logo.png",
-  "bp_logo.png",
-  "Drydocks_World_logo.png",
-  "koc_logo.png",
-  "sinopec.png",
-  "SLMD_logo.png",
+  "MSC_logo.webp",
+  "Shell_logo.webp",
+  "adnoc_logo.webp",
+  "bp_logo.webp",
+  "Drydocks_World_logo.webp",
+  "koc_logo.webp",
+  "sinopec.webp",
+  "SLMD_logo.webp",
 ];
 
 export default function ClientLogos() {
@@ -28,6 +28,8 @@ export default function ClientLogos() {
             <img
               src={`/assets/customer-logos/${file}`}
               alt="Customer logo"
+              loading="lazy"
+              decoding="async"
               className="max-h-16 max-w-[150px] object-contain opacity-65 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0"
             />
           </div>

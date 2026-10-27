@@ -28,7 +28,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 bg-surface shadow-nav transition-colors duration-300">
       <div className="flex min-h-[80px] w-full items-center justify-between gap-4 px-6 py-2 md:px-10 lg:px-14">
         <Link href="/" className="flex items-center gap-3">
-          <Image src="/assets/dpv_logo.png" alt="DPV Offshore" width={188} height={60} className="h-[52px] w-auto" />
+          <Image src="/assets/dpv_logo.webp" alt="DPV Offshore" width={188} height={60} priority className="h-[52px] w-auto" />
           <span className="font-poppins text-[11px] font-bold tracking-[0.15em] text-brand-purple dark:text-ink">
             SRI LANKA
           </span>

@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { Award, Users, Factory, Zap, Ship, Globe } from "lucide-react";
 import Reveal from "./motion/Reveal";
 import Stagger, { StaggerItem } from "./motion/Stagger";
+import AboutDisciplines from "./AboutDisciplines";
 
 const STATS = [
   { icon: Award, target: 12, suffix: "Y+", label: "Experience" },
@@ -102,6 +103,7 @@ export default function AboutStats() {
           </a>
         </div>
       </div>
+      <AboutDisciplines />
     </section>
   );
 }

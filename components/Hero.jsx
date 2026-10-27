@@ -1,3 +1,4 @@
+import { Download } from "lucide-react";
 import HeroMap from "./HeroMap";
 import HeroMobile from "./HeroMobile";
 
@@ -36,6 +37,14 @@ export default function Hero() {
             className="inline-flex items-center gap-3 rounded-full border border-line px-9 py-4 font-dmsans text-xs font-bold tracking-[1.8px] text-ink transition-colors duration-300 hover:border-brand-orange-light hover:text-brand-orange-light"
           >
             CONTACT US
+          </a>
+          <a
+            href="/assets/DPV_Offshore_Company_Profile.pdf"
+            download="DPV_Offshore_Company_Profile.pdf"
+            className="inline-flex items-center gap-3 rounded-full border border-line px-9 py-4 font-dmsans text-xs font-bold tracking-[1.8px] text-ink transition-colors duration-300 hover:border-brand-orange-light hover:text-brand-orange-light"
+          >
+            <Download size={14} aria-hidden="true" />
+            COMPANY PROFILE
           </a>
         </div>
       </div>

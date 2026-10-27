@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 xl:grid-cols-4">
           <div>
             <div className="flex items-center gap-3">
-              <Image src="/assets/dpv_icon.png" alt="DPV Offshore" width={41} height={64} className="h-14 w-auto" />
+              <Image src="/assets/dpv_icon.webp" alt="DPV Offshore" width={41} height={64} className="h-14 w-auto" />
               <h3 className="leading-tight">
                 <span className="block font-poppins text-xl font-extrabold tracking-[-0.01em] text-brand-logo-red">
                   DPV offshore
